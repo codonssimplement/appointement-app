@@ -43,7 +43,7 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
+
 ### ADD FILE .env
 DB_HOST=localhost
 DB_PORT=5432
@@ -51,6 +51,8 @@ DB_USERNAME=
 DB_PASSWORD=
 DB_DATABASE=
 JWT_SECRET=
+```
+
 
 ## Stay in touch
 

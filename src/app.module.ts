@@ -1,9 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TaksModule } from './taks/taks.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { BooksModule } from './books/books.module';
 import { DatabaseService } from './database/database.service';
 import { UserModule } from './user/user.module';
 import { User } from './user/user.entity';
@@ -26,7 +24,7 @@ import { AppointmentModule } from './appointment/appointment.module';
     autoLoadEntities: true,
     entities: [User],
     synchronize: true,
-  }),TaksModule, BooksModule, UserModule,
+  }), UserModule,
   JwtModule.register({
     secret: process.env.JWT_SECRET,
     signOptions: { expiresIn: '1d' },

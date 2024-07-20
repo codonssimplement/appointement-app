@@ -81,7 +81,7 @@ export class UserController {
   }
 
   //All appointment by user id
-  @Get('get-appointments-by-user-id')
+  @Get('appointments-by-user-id')
   @UseGuards(JwtAuthGuard)
   async getAppointmentsByUserId(@Body('userId') userId: number) {
     return this.userService.getAppointmentsByUserId(userId);

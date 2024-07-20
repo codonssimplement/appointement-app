@@ -1,0 +1,5 @@
+#AllTaks
+Get http://localhost:3000/taks
+
+##CreateTaks
+Post http://localhost:3000/taks
